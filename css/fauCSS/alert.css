@@ -1,0 +1,43 @@
+#alert {
+	   background-color: #FF6;
+	   width: 100%;
+	   height:175px;
+	   position: absolute;
+	   top: 0;
+	   left: 0;
+	   z-index: 1001;
+	   border-top: 10px solid #CC0000;
+	   border-bottom: 10px solid #CC0000;
+	   padding: 0 0 25px 0;
+	   margin:0;
+	   font-family: Arial, Helvetica, sans-serif;
+	   display:none;
+ } 
+
+.alerttitle {
+	   margin: 5px 0;
+	   color: #cc0000;
+	   text-align:center;
+}
+#alertfeed {
+	   width: 800px;
+	   margin: auto;
+	   font-size: 12px;
+	   text-align:center;
+}
+.closealert {
+	   text-align: right;
+	   padding-top: 5px;
+	   margin: 0px;
+}
+.closealert a:link{
+	   font-size: 12px;
+	   color: #333;
+	   text-decoration: none;
+	   padding: 0px;
+	   margin: 0px;
+}
+
+#alert a, #alert a:active, #alert a:visited {
+	color: black;
+}

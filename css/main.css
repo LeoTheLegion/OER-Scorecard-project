@@ -1,0 +1,311 @@
+#scorecardApp{
+-webkit-user-select: none; /* Chrome/Safari */        
+-moz-user-select: none; /* Firefox */
+-ms-user-select: none; /* IE10+ */
+
+/* Rules below not implemented in browsers yet */
+-o-user-select: none;
+user-select: none;
+}
+#endText{
+	padding-left: 30px;
+	padding-right: 30px;
+}
+#questionContainer{
+	font-family: "Century Gothic";
+	padding : 0px;
+	width : 100%; height : 125px;
+	overflow : hidden; 
+}
+.buffer{
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.progressHeader{
+	 border-bottom: 1px solid #CC0000;
+}
+.fun-icon img{
+}
+.fun-icon p{
+	padding-top:5px;
+}
+.stroke
+{
+    color: white;
+    text-shadow:
+    -1px -1px 0 #FFFFFF,
+    1px -1px 0 #FFFFFF,
+    -1px 1px 0 #FFFFFF,
+	-1px 1px 0 #FFFFFF,
+    1px -1px 0 #FFFFFF,
+    1px 1px 0 #FFFFFF;
+    
+}
+#main{
+	padding-top:10px;
+}
+.question{
+	height : 150px;
+	font-weight:bold;
+}
+.questionTextBox{
+	padding-left : 25px;
+	padding-right : 25px;
+	width:100%;
+	height:150px;
+}
+.questionText{
+	padding-left : 20px;
+	padding-right : 20px;
+	font-weight:bold;
+}
+textarea {
+    resize: none;
+}
+.questionarea{
+	padding-top:10px;
+	height : 100px;
+}
+body{
+}
+.scorecardBanner{
+	padding-top:10px;
+	padding-bottom:10px;
+	font-weight: 600;
+	color: white;
+	font-family: "Century Gothic";
+	background-color:#003366;
+}
+.scorecardtext{
+	font-weight: 600;
+	font-family: "Century Gothic";
+}
+.scorecardBanner div{
+	font-family: "Arial";
+}
+
+.title{
+	 border-bottom: 1px solid #d9e0e0;
+}
+#total{
+	padding-left:1em;
+}
+#myProgress img {
+	width:100%;
+	height:100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 1;
+}
+.barForeground{
+	background-color:rgba(255, 255, 255, 0.5);
+}
+#myProgress {
+	border-radius: 10px;
+  width: 100%;
+  border: 1px solid #003366;
+}
+#scoreText{
+	    font-weight: 1000;
+	width:100%;
+    position: absolute;
+    top: 5px;
+	padding-right:25px;
+    z-index: 1;
+	color:#003366;
+}
+#Standing{
+	font-family: "Century-Gothic";
+	color:#003366;
+	width:110px;
+    position: absolute;
+    top: 0px;
+	right: 60px;
+    z-index: 2;
+}
+#myBar {
+	border-radius: 10px;
+  width: 1%;
+  height: 30px;
+  background-color: #33cc33;
+  text-align: center;
+  line-height: 30px;
+  color: white;
+
+}
+#threshold-icon{
+	position : absolute;
+	left: 50%;
+}
+.threshold-top {
+	position : absolute;
+	top: 0px;
+	left: -8px;
+  width: 0; 
+  height: 0; 
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+  
+	border-top: 5px solid #003366;
+}
+.threshold-bottom {
+	position : absolute;
+	left: -8px;
+	top: 26px;
+	width: 0; 
+	height: 0; 
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+  
+	border-bottom: 5px solid #003366;
+}
+
+.scoreboardsecondary p{
+	margin-left: 10px;
+	margin-bottom: 0px;
+	padding: 5px;
+	
+}
+.scoreboardsecondary{
+	color : white;
+}
+.scorecard{
+    border-width: 5px;
+	border-top: 2px solid ;
+	
+}
+.scorecardBtn{
+	padding-bottom : 20px;
+	color: white;
+}
+.scorecardBtn:hover{
+	color: white;
+}
+.scorecardBtn:focus{
+	color: white;
+}
+.btn-fau{
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+	text-transform: uppercase;
+ 	color: #ffffff !important;
+	width : 100%;
+	background-color: #CC0000;
+    border: 3px solid green;
+}
+.btn-fau:hover{
+	color: #ffffff !important;
+	background-color: #003366;
+}
+#end{
+	font-size: 14px;
+    line-height: 20px;
+}
+.answers {
+
+    display: inline-flex;
+    position: relative;
+	width: 70px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.answers input {
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+.answerText{
+	position: relative;
+	width: 80px;
+	left: 40%;
+}
+.answers:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+.answers input:checked ~ .checkmark {
+    background-color: #003366;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.answers input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.answers .checkmark:after {
+ 	top: 9px;
+	left: 9px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
+}
+.slidecontainer{
+	
+}
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 15px;
+    border-radius: 5px;   
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%; 
+    background: #003366;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #003366;
+    cursor: pointer;
+}
+.answerTextbox{
+	width: 80%;
+}
+.labelResult{
+	height:45px;
+}
+.money{
+	font-family: "Allerta Stencil";
+	font-size: 24px;
+	width: 98%;
+	margin:auto;
+}
+.inputCash{
+	margin:auto;
+	padding-top:20px;
+	width: 80px;
+}
+.result{
+	display: none;
+}
